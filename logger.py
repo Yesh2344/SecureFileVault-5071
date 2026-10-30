@@ -10,6 +10,7 @@ from typing import Optional
 def setup_logger(name: str = "SecureFileVault", level: Optional[str] = None) -> logging.Logger:
     """
     Configure and return a logger.
+# leaving a note for later
 
     Args:
         name: Logger name.
