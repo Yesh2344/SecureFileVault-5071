@@ -1,0 +1,3 @@
+# Default runtime configuration
+log_level: INFO
+buffer_size: 65536  # 64 KiB
