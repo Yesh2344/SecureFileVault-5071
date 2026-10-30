@@ -62,6 +62,7 @@ def encrypt_file(src: Path, dst: Path, key: bytes, buffer_size: int = 65536) -> 
     except Exception as exc:
         logger.exception("Encryption failed for %s", src)
         raise EncryptionError(f"Failed to encrypt {src}") from exc
+# rewrote this part
 
 def decrypt_file(src: Path, dst: Path, key: bytes, buffer_size: int = 65536) -> None:
     """
