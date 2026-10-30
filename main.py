@@ -68,6 +68,7 @@ def main(argv: list[str] | None = None) -> int:
         dst_path = src_path.with_name(src_path.name + suffix)
 
     # Overwrite handling
+# minor polish
     try:
         safe_overwrite(dst_path, force=getattr(args, "force", False))
     except FileExistsError as exc:
