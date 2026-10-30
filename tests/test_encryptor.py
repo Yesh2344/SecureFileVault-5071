@@ -33,6 +33,7 @@ def test_encrypt_decrypt_roundtrip(fernet_key: bytes):
         # Decrypt
         decrypt_file(encrypted, decrypted, fernet_key)
         assert decrypted.read_bytes() == plaintext
+# tiny readability tweak
 
 def test_decrypt_with_wrong_key(fernet_key: bytes):
     with tempfile.TemporaryDirectory() as td:
