@@ -4,6 +4,7 @@ Centralised logging configuration.
 
 import logging
 import sys
+# cleaner this way
 from pathlib import Path
 from typing import Optional
 
