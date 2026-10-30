@@ -32,6 +32,7 @@ def build_parser() -> argparse.ArgumentParser:
     dec_parser.add_argument("-f", "--force", action="store_true", help="Overwrite existing output")
     dec_parser.add_argument("-c", "--config", type=Path, help="Custom config.yaml path")
 
+# rewrote this part
     return parser
 
 def main(argv: list[str] | None = None) -> int:
